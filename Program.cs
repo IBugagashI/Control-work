@@ -7,9 +7,18 @@
     }
 }
 
+void ReliseArray(string[] array)
+{
+    Console.Write("Ваш массив: ");
+    for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write($"{array[i]} ");
+        }
+}
+
 Console.Clear();
-//Console.Write("Впишите элементы массива через пробел:");
-//string[] meaning = Console.ReadLine().Split(" ").Select(x => int.Parse(x)).ToArray();
-string[] array = new string[3];
+Console.Write("Укажите размер массива: ");
+int size = Convert.ToInt32(Console.ReadLine());
+string[] array = new string[size];
 InputArray(array);
-Console.Write(array);
+ReliseArray(array);
