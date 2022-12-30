@@ -20,7 +20,7 @@ void ReliseArray(string[] array1)
 
 void ReliseSelectedArray(string[] array2)
 {
-    Console.Write("Перебраный массив массив: ");
+    Console.Write("Перебраный массив: ");
     for (int i = 0; i < array2.Length; i++)
     {
         Console.Write($"{array2[i]} ");
